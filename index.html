@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <nav class="topnav">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="snap">
+    </div>
+    <div class="topnav-btn">
+      <img class="topnav-btn__open" src="./images/icon-menu.svg" alt="">
+      <img class="topnav-btn__close" src="./images/icon-close-menu.svg" alt="">
+    </div>
+    <ul class="topnav-items">
+        <li class="item">
+          <div class="dropdown-menu">
+            Features
+            <div class="arrow arrow-up">
+              <img src="./images/icon-arrow-up.svg" alt="">
+            </div>
+            <div class="arrow arrow-down">
+              <img src="./images/icon-arrow-down.svg" alt="">
+            </div>
+          </div>
+          <ul class="dropdown-content">
+            <li><img src="./images/icon-todo.svg" alt=""><a heref="#">Todo List</a></li>
+            <li><img src="./images/icon-calendar.svg" alt=""><a heref="#">Calendar</a></li>
+            <li><img src="./images/icon-reminders.svg" alt=""><a heref="#">Reminders</a></li>
+            <li><img src="./images/icon-planning.svg" alt=""><a heref="#">Planning</a></li>
+          </ul>
+        </li>
+        <li class="item">
+          <div class="dropdown-menu">
+            Company
+            <div class="arrow arrow-up">
+              <img src="./images/icon-arrow-up.svg" alt="">
+            </div>
+            <div class="arrow arrow-down">
+              <img src="./images/icon-arrow-down.svg" alt="">
+            </div>
+          </div>
+          <ul class="dropdown-content">
+            <li><a heref="#">History</a></li>
+            <li><a heref="#">Our Team</a></li>
+            <li><a heref="#">Blog</a></li>
+          </ul>
+        </li>
+        <li class="item"><a heref="#">Careers</a></li>
+        <li class="item"><a heref="#">About</a></li>
+    </ul>
+    <div class="identification">
+      <button class="login">Login</button>
+      <button>Register</button>
+    </div>
+  </nav>
+
+  <main>
+      <picture class="hero-img">
+        <source media="(max-width: 750px)" srcset="./images/image-hero-mobile.png">
+        <source media="(min-width: 751px)" srcset="./images/image-hero-desktop.png">
+        <img src="./images/image-hero-desktop.png" alt="">
+      </picture>
+
+      <div class="hero-text">
+        <h1>Make remote work</h1>
+      
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+      
+        <button>Learn more</button>
+
+        <div class="clients">
+          <img class="databiz" src="./images/client-databiz.svg" alt="">
+          <img class="audiophile" src="./images/client-audiophile.svg" alt="">
+          <img class="meet" src="./images/client-meet.svg" alt="">
+          <img class="maker" src="./images/client-maker.svg" alt="">
+        </div>
+      </div>
+  </main>
+  
+<!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">MaxDeb1</a>.
+  </div> -->
+
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
